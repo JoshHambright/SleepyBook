@@ -33,6 +33,9 @@ namespace SleepyBook.Data
             return new ApplicationDbContext();
         }
         public DbSet<Post> Posts { get; set; } //<--- DBSet for Posts
+        public DbSet<Like> Likes { get; set; }
+        public DbSet<Comment> Comments { get; set; }
+        public DbSet<Reply> Replies { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder
