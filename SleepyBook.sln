@@ -5,6 +5,12 @@ VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SleepyBook.WebAPI", "SleepyBook.WebAPI\SleepyBook.WebAPI.csproj", "{623C2CA7-E21F-424E-A4E3-F81825EE857A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SleepyBook.Data", "SleepyBook.Data\SleepyBook.Data.csproj", "{372A5635-99A1-4912-A054-3B22D2E5BD89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SleepyBook.Models", "SleepyBook.Models\SleepyBook.Models.csproj", "{785EE364-930E-4338-8519-178BA962EA10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SleepyBook.Services", "SleepyBook.Services\SleepyBook.Services.csproj", "{4224D090-E49E-4FD8-A139-96CC113DAC3B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{623C2CA7-E21F-424E-A4E3-F81825EE857A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{623C2CA7-E21F-424E-A4E3-F81825EE857A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{623C2CA7-E21F-424E-A4E3-F81825EE857A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{372A5635-99A1-4912-A054-3B22D2E5BD89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{372A5635-99A1-4912-A054-3B22D2E5BD89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{372A5635-99A1-4912-A054-3B22D2E5BD89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{372A5635-99A1-4912-A054-3B22D2E5BD89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{785EE364-930E-4338-8519-178BA962EA10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{785EE364-930E-4338-8519-178BA962EA10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{785EE364-930E-4338-8519-178BA962EA10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{785EE364-930E-4338-8519-178BA962EA10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4224D090-E49E-4FD8-A139-96CC113DAC3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4224D090-E49E-4FD8-A139-96CC113DAC3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4224D090-E49E-4FD8-A139-96CC113DAC3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4224D090-E49E-4FD8-A139-96CC113DAC3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
