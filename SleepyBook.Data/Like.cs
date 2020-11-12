@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace SleepyBook.Data
 {
-    class Class1
+    public class Like
     {
+        public Post LikedPost { get; set; }
+        public Guid Liker { get; set; }
     }
 }
