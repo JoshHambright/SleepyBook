@@ -12,7 +12,7 @@ namespace SleepyBook.Data
         public string Title { get; set; }
         public string Text { get; set; }
         public Guid Author { get; set; }
-        public virtual List<Comment> Comments { get; set; } = new list<Comment>();
+        public virtual List<Comment> Comments { get; set; } = new List<Comment>();
 
 
     }
