@@ -151,12 +151,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-
-
-    <Compile Include="Post.cs" />
-
-    <Compile Include="IdentityModels.cs" />
+    <Compile Include="Comment.cs" />
     <Compile Include="Like.cs" />
+    <Compile Include="Post.cs" />
+    <Compile Include="IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
