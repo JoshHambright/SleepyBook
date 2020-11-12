@@ -19,6 +19,7 @@ namespace SleepyBook.Data
         
         public virtual List<Reply> Replies { get; set; }
 
+        //hi
         
         [ForeignKey(nameof(Post))]
         public virtual Post Post { get; set; }
