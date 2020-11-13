@@ -14,14 +14,14 @@ namespace SleepyBook.Data
         public int CommentID { get; set; }
         [Required]
         public string Text { get; set; }
-        [Required]
         public Guid Author { get; set; }
-        
-        public virtual List<Reply> Replies { get; set; }
 
-        //hi
+        //public virtual List<Reply> Replies { get; set; }
+
+
+        [ForeignKey(nameof(Post))]
+        public int Id { get; set; }
         
-        //[ForeignKey(nameof(Post))]
-        //public virtual Post Post { get; set; }
+        public virtual Post Post { get; set; }
     }
 }

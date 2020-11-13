@@ -78,9 +78,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="CommentService.cs" />
+    <Compile Include="LikeService.cs" />
     <Compile Include="PostService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReplyService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -88,6 +90,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SleepyBook.Data\SleepyBook.Data.csproj">
+      <Project>{372A5635-99A1-4912-A054-3B22D2E5BD89}</Project>
+      <Name>SleepyBook.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SleepyBook.Models\SleepyBook.Models.csproj">
+      <Project>{785ee364-930e-4338-8519-178ba962ea10}</Project>
       <Project>{372A5635-99A1-4912-A054-3B22D2E5BD89}</Project>
       <Name>SleepyBook.Data</Name>
     </ProjectReference>
