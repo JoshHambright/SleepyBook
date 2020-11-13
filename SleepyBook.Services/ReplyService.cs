@@ -51,6 +51,7 @@ namespace SleepyBook.Services
                                     ReplyID = e.ReplyID,
                                     Text = e.Text,
                                     Author = e.Author,
+                                    CommentID = e.CommentID
                                     //CreatedUtc = e.CreatedUtc,
                                 }
                         );
