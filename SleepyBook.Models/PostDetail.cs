@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SleepyBook.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -13,8 +14,10 @@ namespace SleepyBook.Models
         public string Title { get; set; }
         public string Text { get; set; }
         public Guid Author { get; set; }
+        [Display (Name ="Likes")]
+        public int LikeCount { get; set; }
         [Display(Name = "Created")]
         public DateTimeOffset CreatedUtc { get; set; }
-        //public virtual List<CommentList> Comments { get; set; } = new List<Comment>();
+        public List<CommentList> Comments { get; set; } = new List<CommentList>();
     }
 }
