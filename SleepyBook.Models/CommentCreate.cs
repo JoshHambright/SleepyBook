@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace SleepyBook.Models
 {
-    class Class1
+    public class CommentCreate
     {
+        
+        public string Text { get; set; }
+        public Guid Author { get; set; }
     }
 }

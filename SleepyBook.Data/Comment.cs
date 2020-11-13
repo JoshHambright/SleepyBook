@@ -17,11 +17,11 @@ namespace SleepyBook.Data
         [Required]
         public Guid Author { get; set; }
         
-        public virtual List<Reply> Replies { get; set; }
+        //public virtual List<Reply> Replies { get; set; }
 
         //hi
         
-        [ForeignKey(nameof(Post))]
-        public virtual Post Post { get; set; }
+        //[ForeignKey(nameof(Post))]
+        //public virtual Post Post { get; set; }
     }
 }
