@@ -4,7 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace SleepyBook.Services
 {
@@ -24,8 +23,8 @@ namespace SleepyBook.Services
             {
                 Author = _userId,
                 Text = model.Text,
-                CommentId = model.CommentId,
-                CreatedUtc = DateTimeOffset.Now
+                CommentID = model.CommentID,
+                //CreatedUtc = DateTimeOffset.Now
             };
             using (var ctx = new ApplicationDbContext())
             {
@@ -44,7 +43,7 @@ namespace SleepyBook.Services
                 var query =
                     ctx
                         .Replies
-                        .Where(e => e.CommentId == id)
+                        .Where(e => e.CommentID == id)
                         .Select(
                             e =>
                                 new ReplyDetails
@@ -52,7 +51,8 @@ namespace SleepyBook.Services
                                     ReplyID = e.ReplyID,
                                     Text = e.Text,
                                     Author = e.Author,
-                                    CreatedUtc = e.CreatedUtc,
+                                    CommentID = e.CommentID
+                                    //CreatedUtc = e.CreatedUtc,
                                 }
                         );
                 return query.ToArray();

@@ -61,21 +61,37 @@ namespace SleepyBook.Services
             }
         }
 
-        public CommentDetail GetCommentsByPostId(int id)
+        public IEnumerable<CommentList> GetCommentsByPostId(int id)
         {
             using (var ctx = new ApplicationDbContext())
             {
-                var entity =
+                var query =
                     ctx
                         .Comments
-                        .SingleOrDefault(e => e.Id == id);
-                return
-                    new CommentDetail
-                    {
-                        CommentID = entity.CommentID,
-                        Text = entity.Text,
-                        Author = _userId
-                    };
+                        .Where(e => e.Id == id)
+                        .Select(
+                            e =>
+                                new CommentList
+                                {
+                                    Id = e.Id,
+                                    CommentID = e.CommentID,
+                                    Text = e.Text,
+                                    Author = _userId,
+                                    Replies = e.Replies.Select(
+                                        x=>
+                                            new ReplyDetails
+                                            {
+                                                ReplyID = x.ReplyID,
+                                                Text = x.Text,
+                                                Author = x.Author,
+                                                CommentID = x.CommentID
+                                            }).ToList()
+                                    //Title = e.Title,
+                                    //CreatedUtc = e.CreatedUtc
+                                }
+                        );
+
+                return query.ToArray();
             }
         }
 

@@ -15,13 +15,9 @@ namespace SleepyBook.Data
         [Required]
         public string Text { get; set; }
         public Guid Author { get; set; }
-
-        public virtual List<Reply> Replies { get; set; }
-
-
         [ForeignKey(nameof(Post))]
         public int Id { get; set; }
-        
         public virtual Post Post { get; set; }
+        public virtual List<Reply> Replies { get; set; } = new List<Reply>();
     }
 }
