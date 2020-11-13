@@ -164,6 +164,11 @@
     <Compile Include="Migrations\202011131615434_three.cs" />
     <Compile Include="Migrations\202011131615434_three.Designer.cs">
       <DependentUpon>202011131615434_three.cs</DependentUpon>
+
+    <Compile Include="Migrations\202011131501566_two.cs" />
+    <Compile Include="Migrations\202011131501566_two.Designer.cs">
+      <DependentUpon>202011131501566_two.cs</DependentUpon>
+
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Post.cs" />
@@ -184,6 +189,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011131615434_three.resx">
       <DependentUpon>202011131615434_three.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202011131501566_two.resx">
+      <DependentUpon>202011131501566_two.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

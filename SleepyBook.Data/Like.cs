@@ -13,12 +13,10 @@ namespace SleepyBook.Data
 
         public int LikeId { get; set; }
         [Required]
-        public Post LikedPost { get; set; }
+        public int PostId { get; set; }
 
-        public int LikeID { get; set; }
 
-        
         public Guid Liker { get; set; }
-        //public virtual Post LikedPost { get; set; }
+        public virtual Post LikedPost { get; set; }
     }
 }
