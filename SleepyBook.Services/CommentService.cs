@@ -76,7 +76,16 @@ namespace SleepyBook.Services
                                     Id = e.Id,
                                     CommentID = e.CommentID,
                                     Text = e.Text,
-                                    Author = _userId
+                                    Author = _userId,
+                                    Replies = e.Replies.Select(
+                                        x=>
+                                            new ReplyDetails
+                                            {
+                                                ReplyID = x.ReplyID,
+                                                Text = x.Text,
+                                                Author = x.Author,
+                                                CommentID = x.CommentID
+                                            }).ToList()
                                     //Title = e.Title,
                                     //CreatedUtc = e.CreatedUtc
                                 }
