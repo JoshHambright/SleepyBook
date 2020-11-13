@@ -85,11 +85,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="PostService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SleepyBook.Data\SleepyBook.Data.csproj">
+      <Project>{372A5635-99A1-4912-A054-3B22D2E5BD89}</Project>
+      <Name>SleepyBook.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SleepyBook.Models\SleepyBook.Models.csproj">
+      <Project>{785EE364-930E-4338-8519-178BA962EA10}</Project>
+      <Name>SleepyBook.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
