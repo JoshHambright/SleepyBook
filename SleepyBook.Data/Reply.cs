@@ -11,13 +11,13 @@ namespace SleepyBook.Data
     public class Reply
     {
         [Key]
-        public int CommentID { get; set; }
+        public int ReplyID { get; set; }
         [Required]
         public string Text { get; set; }
         [Required]
         public Guid Author { get; set; }
 
-        public virtual List<Reply> Replies { get; set; }
+        //public virtual List<Reply> Replies { get; set; }
 
         //hi
 
