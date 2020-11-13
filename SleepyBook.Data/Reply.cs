@@ -22,6 +22,11 @@ namespace SleepyBook.Data
         //public virtual Comment Comment { get; set; }
 
         //public virtual List<Reply> Replies { get; set; }
+
+
+
+
         public DateTimeOffset CreatedUtc { get; set; }
+
     }
 }
