@@ -63,6 +63,7 @@ namespace SleepyBook.Services
                     ctx
                         .Posts
                         .Single(e => e.Id == id);
+
                 return
                     new PostDetail
                     {
@@ -70,6 +71,25 @@ namespace SleepyBook.Services
                         Author = entity.Author,
                         Title = entity.Title,
                         Text = entity.Text,
+                        LikeCount = entity.LikeCount,
+                        Comments = entity.Comments.Select(
+                            e => 
+                                new CommentList
+                                {
+                                    CommentID = e.CommentID,
+                                    Text = e.Text,
+                                    Author = e.Author,
+                                    Replies = e.Replies.Select(
+                                        x =>
+                                            new ReplyDetails
+                                            {
+                                                ReplyID = x.ReplyID,
+                                                Text = x.Text,
+                                                Author = x.Author,
+                                                CommentID = x.CommentID
+                                            }).ToList()
+                                }).ToList()
+                        ,
                         CreatedUtc = entity.CreatedUtc
                     };
             }

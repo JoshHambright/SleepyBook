@@ -16,8 +16,21 @@ namespace SleepyBook.Data
         [Required]
         public string Text { get; set; }
         public Guid Author { get; set; }
-        //public virtual List<Comment> Comments { get; set; } = new List<Comment>();
-
+        public int LikeCount
+        {
+            get
+            {
+                int likecounter = 0;
+                foreach (Like like in Likes)
+                {
+                    likecounter++;
+                }
+                return likecounter;
+            }
+        }
+        
+        public virtual List<Comment> Comments { get; set; } = new List<Comment>();
+        public virtual List<Like> Likes { get; set; } = new List<Like>();
         public DateTimeOffset CreatedUtc { get; set; }
 
 
