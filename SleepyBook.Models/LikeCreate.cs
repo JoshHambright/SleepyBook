@@ -8,8 +8,9 @@ using System.Threading.Tasks;
 namespace SleepyBook.Models
 {
     public class LikeCreate
-    {
-        [Required]
+    {   
+      
         public int PostId { get; set; }
+        public Guid Liker { get; set; }
     }
 }
