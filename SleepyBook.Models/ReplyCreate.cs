@@ -9,9 +9,8 @@ namespace SleepyBook.Models
 {
     public class ReplyCreate
     {
-        [MaxLength(10000)]
+        public int CommentID { get; set; }
         public string Text { get; set; }
-        public int CommentId { get; set; }
-
+        public Guid Author { get; set; }
     }
 }
