@@ -7,13 +7,13 @@ namespace SleepyBook.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class one : IMigrationMetadata
+    public sealed partial class two : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(one));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(two));
         
         string IMigrationMetadata.Id
         {
-            get { return "202011130211455_one"; }
+            get { return "202011131751538_two"; }
         }
         
         string IMigrationMetadata.Source

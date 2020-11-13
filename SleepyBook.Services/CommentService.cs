@@ -68,7 +68,7 @@ namespace SleepyBook.Services
                 var entity =
                     ctx
                         .Comments
-                        .Single(e => e.Id == id);
+                        .SingleOrDefault(e => e.Id == id);
                 return
                     new CommentDetail
                     {
