@@ -8,8 +8,10 @@ namespace SleepyBook.Models
 {
     public class CommentList
     {
+        public int Id { get; set; }
         public int CommentID { get; set; }
         public string Text { get; set; }
         public Guid Author { get; set; }
+        //Select FROM *
     }
 }

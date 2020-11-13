@@ -26,6 +26,7 @@ namespace SleepyBook.Services
                     //Title = model.Title,
                     Text = model.Text,
                     //CreatedUtc = DateTimeOffset.Now
+                    Id = model.Id
                 };
 
             using (var ctx = new ApplicationDbContext())
@@ -47,7 +48,10 @@ namespace SleepyBook.Services
                             e =>
                                 new CommentList
                                 {
+                                    Id = e.Id,
                                     CommentID = e.CommentID,
+                                    Text = e.Text,
+                                    Author = _userId
                                     //Title = e.Title,
                                     //CreatedUtc = e.CreatedUtc
                                 }
@@ -56,5 +60,7 @@ namespace SleepyBook.Services
                 return query.ToArray();
             }
         }
+
+        //public IEnumerable<CommentList> GetCommentsByPostID()
     }
 }
