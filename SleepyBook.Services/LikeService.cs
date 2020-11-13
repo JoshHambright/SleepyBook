@@ -21,7 +21,7 @@ namespace SleepyBook.Services
             var entity = new Like()
             {
                 Liker = _userId,
-                LikeId = model.LikeId
+                LikeId = model.PostId
                 
             };
             using (var ctx = new ApplicationDbContext())
