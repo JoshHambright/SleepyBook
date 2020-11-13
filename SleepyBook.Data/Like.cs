@@ -11,7 +11,8 @@ namespace SleepyBook.Data
     {
         [Key]
         public int LikeID { get; set; }
-        public Post LikedPost { get; set; }
+        
         public Guid Liker { get; set; }
+        //public virtual Post LikedPost { get; set; }
     }
 }
