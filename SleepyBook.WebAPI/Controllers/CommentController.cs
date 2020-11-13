@@ -26,6 +26,13 @@ namespace SleepyBook.WebAPI.Controllers
             return Ok(comments);
         }
 
+        public IHttpActionResult GetCommentsByPostID(int id)
+        {
+            CommentService commentService = CreateCommentService();
+            var comments = commentService.GetCommentsByPostId(id);
+            return Ok(comments);
+        }
+
         public IHttpActionResult PostComments(CommentCreate comment)
         {
             if (!ModelState.IsValid)
