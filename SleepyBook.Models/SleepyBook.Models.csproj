@@ -79,6 +79,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommentCreate.cs" />
+    <Compile Include="CommentDetail.cs" />
     <Compile Include="CommentList.cs" />
     <Compile Include="LikeCreate.cs" />
     <Compile Include="PostCreate.cs" />
