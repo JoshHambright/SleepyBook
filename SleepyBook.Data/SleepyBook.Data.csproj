@@ -153,10 +153,6 @@
   <ItemGroup>
     <Compile Include="Comment.cs" />
     <Compile Include="Like.cs" />
-    <Compile Include="Migrations\202011131806279_three.cs" />
-    <Compile Include="Migrations\202011131806279_three.Designer.cs">
-      <DependentUpon>202011131806279_three.cs</DependentUpon>
-    </Compile>
     <!--<Compile Include="Migrations\202011131529367_one1.cs" />
     <Compile Include="Migrations\202011131529367_one1.Designer.cs">
       <DependentUpon>202011131529367_one1.cs</DependentUpon>
@@ -178,11 +174,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202011131806279_three.resx">
-      <DependentUpon>202011131806279_three.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
