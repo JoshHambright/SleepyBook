@@ -215,10 +215,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202011131522108_one.cs" />
-    <Compile Include="Migrations\202011131522108_one.Designer.cs">
-      <DependentUpon>202011131522108_one.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -329,11 +325,6 @@
       <Project>{4224d090-e49e-4fd8-a139-96cc113dac3b}</Project>
       <Name>SleepyBook.Services</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202011131522108_one.resx">
-      <DependentUpon>202011131522108_one.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
