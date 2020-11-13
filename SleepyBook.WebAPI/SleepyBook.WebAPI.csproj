@@ -207,7 +207,11 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+<<<<<<< HEAD
+    <Compile Include="Controllers\LikeController.cs" />
+=======
     <Compile Include="Controllers\PostController.cs" />
+>>>>>>> 81914161412d892efc7efceae5d0875cf631155c
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

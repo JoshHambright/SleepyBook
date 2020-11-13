@@ -5,15 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SleepyBook.Data
+namespace SleepyBook.Models
 {
-    public class Like
+    public class LikeCreate
     {
-        [Key]
-        public int LikeId { get; set; }
         [Required]
-        public Post LikedPost { get; set; }
-        
-        public Guid Liker { get; set; }
+        public int LikeId { get; set; }
     }
 }
