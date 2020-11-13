@@ -21,7 +21,7 @@ namespace SleepyBook.Data
 
         //hi
 
-        [ForeignKey(nameof(Comment))]
-        public virtual Comment Comment { get; set; }
+        //[ForeignKey(nameof(Comment))]
+        //public virtual Comment Comment { get; set; }
     }
 }
