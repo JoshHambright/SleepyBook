@@ -157,6 +157,10 @@
     <Compile Include="Migrations\202011130211455_one.Designer.cs">
       <DependentUpon>202011130211455_one.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011131501566_two.cs" />
+    <Compile Include="Migrations\202011131501566_two.Designer.cs">
+      <DependentUpon>202011131501566_two.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Post.cs" />
     <Compile Include="IdentityModels.cs" />
@@ -170,6 +174,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202011130211455_one.resx">
       <DependentUpon>202011130211455_one.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011131501566_two.resx">
+      <DependentUpon>202011131501566_two.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
