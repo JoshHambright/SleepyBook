@@ -153,6 +153,11 @@
   <ItemGroup>
     <Compile Include="Comment.cs" />
     <Compile Include="Like.cs" />
+
+    <!--<Compile Include="Migrations\202011131806279_three.cs" />
+    <Compile Include="Migrations\202011131806279_three.Designer.cs">
+      <DependentUpon>202011131806279_three.cs</DependentUpon>-->
+    </Compile>
     <!--<Compile Include="Migrations\202011131529367_one1.cs" />
     <Compile Include="Migrations\202011131529367_one1.Designer.cs">
       <DependentUpon>202011131529367_one1.cs</DependentUpon>
