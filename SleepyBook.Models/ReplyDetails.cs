@@ -11,6 +11,7 @@ namespace SleepyBook.Models
         public int ReplyID { get; set; }
         public string Text { get; set; }
         public Guid Author { get; set; }
-        public DateTimeOffset CreatedUtc { get; set; }
+        public int CommentID { get; set; }
+        //public DateTimeOffset CreatedUtc { get; set; }
     }
 }
