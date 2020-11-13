@@ -10,6 +10,6 @@ namespace SleepyBook.Models
     public class LikeCreate
     {
         [Required]
-        public int LikeId { get; set; }
+        public int PostId { get; set; }
     }
 }
