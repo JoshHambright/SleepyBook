@@ -21,15 +21,15 @@ namespace SleepyBook.Services
             var entity = new Like()
             {
                 Liker = _userId,
-                LikeId = model.PostId
-                
+                PostId = model.PostId
+
             };
             using (var ctx = new ApplicationDbContext())
             {
                 ctx.Likes.Add(entity);
                 return ctx.SaveChanges() == 1;
             }
-            
+
         }
 
     }
