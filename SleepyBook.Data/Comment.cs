@@ -21,7 +21,7 @@ namespace SleepyBook.Data
 
         //hi
         
-        [ForeignKey(nameof(Post))]
-        public virtual Post Post { get; set; }
+        //[ForeignKey(nameof(Post))]
+        //public virtual Post Post { get; set; }
     }
 }
